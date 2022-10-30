@@ -11,7 +11,7 @@ internal fun BottomNavigationView.setBottomNavigationSections(bottomNavigationCo
         menu.add(0, index, index, bottomNavigationSection.title).apply {
             when (val src = bottomNavigationSection.iconSource) {
                 is IconSource.ResourceId -> setIcon(src.drawableResourceId)
-                is IconSource.Url -> bottomNavigationConfig.loader.loadIcon(this, src.url, context)
+                is IconSource.Url -> bottomNavigationConfig.loader.loadIcon(this, src.url)
                 IconSource.NotDefined -> {}
             }
 
