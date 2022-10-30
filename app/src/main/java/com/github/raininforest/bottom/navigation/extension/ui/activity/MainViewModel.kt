@@ -1,4 +1,4 @@
-package com.github.raininforest.bottom.navigation.extension
+package com.github.raininforest.bottom.navigation.extension.ui.activity
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

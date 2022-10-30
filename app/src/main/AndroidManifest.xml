@@ -15,7 +15,7 @@
         android:theme="@style/Theme.BottomNavigationExtension"
         tools:targetApi="31">
         <activity
-            android:name="com.github.raininforest.bottom.navigation.extension.MainActivity"
+            android:name="com.github.raininforest.bottom.navigation.extension.ui.activity.MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

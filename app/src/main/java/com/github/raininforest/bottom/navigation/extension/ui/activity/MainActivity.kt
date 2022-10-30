@@ -1,9 +1,11 @@
-package com.github.raininforest.bottom.navigation.extension
+package com.github.raininforest.bottom.navigation.extension.ui.activity
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.github.raininforest.bottom.navigation.extension.R
 import com.github.raininforest.bottom.navigation.extension.api.setup
 import com.github.raininforest.bottom.navigation.extension.databinding.ActivityMainBinding
 import com.github.raininforest.bottom.navigation.extension.glide.loader.GlideMenuIconLoader
@@ -12,7 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val viewModel: MainViewModel = MainViewModel()
+    private val viewModel: MainViewModel by lazy { ViewModelProvider(this)[MainViewModel::class.java] }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
