@@ -5,7 +5,7 @@ import com.github.raininforest.bottom.navigation.extension.api.BottomNavigationS
 import com.github.raininforest.bottom.navigation.extension.api.IconSource
 import com.github.raininforest.bottom.navigation.extension.repository.data.BottomNavigationSectionData
 
-fun List<BottomNavigationSectionData>.toBottomNavigationSections(): List<BottomNavigationSection> =
+internal fun List<BottomNavigationSectionData>.toBottomNavigationSections(): List<BottomNavigationSection> =
     filter {
         it.iconUrl.isNotEmpty() || it.link.isNotEmpty()
     }.map {

@@ -1,6 +1,5 @@
 package com.github.raininforest.bottom.navigation.extension.builders
 
-import android.content.Context
 import android.view.MenuItem
 import androidx.annotation.ColorRes
 import com.github.raininforest.bottom.navigation.extension.api.BottomNavigationConfig
@@ -10,7 +9,7 @@ import com.github.raininforest.bottom.navigation.extension.api.MenuIconLoader
 class BottomNavigationConfigBuilder {
     private var onItemClicked: (BottomNavigationSection) -> Unit = {}
     private var loader: MenuIconLoader = object : MenuIconLoader {
-        override fun loadIcon(menuItem: MenuItem, url: String, context: Context) {
+        override fun loadIcon(menuItem: MenuItem, url: String) {
             // fallback implementation, ignore
         }
     }

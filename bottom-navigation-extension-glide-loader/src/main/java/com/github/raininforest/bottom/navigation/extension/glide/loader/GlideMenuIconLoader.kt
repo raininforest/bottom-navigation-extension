@@ -12,6 +12,6 @@ class GlideMenuIconLoader(private val context: Context) : MenuIconLoader {
             .asBitmap()
             .load(url)
             .diskCacheStrategy(DiskCacheStrategy.DATA)
-            .into(MenuTarget(context, menuItem))
+            .into(MenuItemTarget(context, menuItem))
     }
 }

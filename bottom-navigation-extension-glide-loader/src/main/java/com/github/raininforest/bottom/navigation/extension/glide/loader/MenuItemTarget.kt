@@ -8,7 +8,7 @@ import androidx.core.graphics.drawable.toDrawable
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 
-internal class MenuTarget(
+internal class MenuItemTarget(
     private val context: Context,
     private val menuItem: MenuItem
 ) : CustomTarget<Bitmap>() {
